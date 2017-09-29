@@ -1,0 +1,21 @@
+#map {
+	padding: rem-calc(240) 0;
+	
+	.map-infobox {
+		
+		span {
+			padding-right: $global-padding/6;
+		}
+		
+		.title {
+			font-size: 1.25rem;
+			display: block;
+			font-weight: $global-weight-bold;
+			margin-bottom: $global-margin/4;
+		}
+		
+		.streetAddress {
+			display: block;
+		}
+	}
+}
