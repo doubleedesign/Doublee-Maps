@@ -162,4 +162,4 @@
 	]
   }
 ],
-{name: 'Jalapeno'}
+{name: 'Custom'}
