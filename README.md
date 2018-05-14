@@ -12,10 +12,11 @@ Files for all steps are included in this repo.
 1. Create custom post type for addresses using `functions/custom-post-types/address.php`
 2. Call `functions/custom-post-types/address.php` and `functions/maps/map-data.php` in your theme's functions.php
 3. Import ACF fields (or create your own) using `acf-address-fields.json`. If you change these or create your own, you will need to edit the map builder files accordingly
-4. Add the map to your desired template by calling `get_template_part('template-parts/map.php')`
-5. Import `scss/theme/template-parts/_map.scss` into your style.scss
-6. Compile CSS
-7. Add some addresses in WordPress and watch the magic happen!
+4. Add your own Google Maps API key at the bottom of `template-parts/map.php`
+5. Add the map to your desired template by calling `get_template_part('template-parts/map.php')`
+6. Import `scss/theme/template-parts/_map.scss` into your style.scss
+7. Compile CSS
+8. Add some addresses in WordPress and watch the magic happen!
 
 ### Options
 * To change the appearance of the map, edit `functions/maps/map-style.php`.
