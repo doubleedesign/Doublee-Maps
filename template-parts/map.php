@@ -17,10 +17,13 @@ foreach ($address_ids as $address_id) {
 	$id = $address_id;
 	$data = doublee_get_address_data($id);
 
-	// Get the name (post title in WP), make it all lowercase, and strip whitespace
+	// Get the name (post title in WP), make it all lowercase, and strip whitespace, numbers and symbols (because they break JS!)
 	$name = get_the_title($address_id);
 	$nicename = strtolower($name);
 	$nicename = preg_replace('/\s+/', '', $nicename);
+	$nicename = str_replace(' ', '', $nicename); // remove spaces
+	$nicename = preg_replace('/[^A-Za-z\-]/', '', $nicename); // remove special characters
+	$nicename = preg_replace('/[0-9]+/', '', $nicename); // remove numbers
 
 	// Put the lat and long into variables that we'll use to build the string
 	$this_lat = $data['lat'];
