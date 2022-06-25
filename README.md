@@ -4,6 +4,7 @@ A set of files that can be integrated into a theme to use an address custom post
 ### Requirements
 * [Advanced Custom Fields plugin](https://www.advancedcustomfields.com)
 * Correctly set text domain in style.css (it should be your theme folder name)
+* Your own Google Maps API key.
 
 No particular theme is required. The folder/file structure here simply denotes where you would place the files in the current [Double-E Foundation](https://github.com/doubleedesign/Double-E-Foundation) file structure. It could be adjusted for use in other themes fairly easily.
 
